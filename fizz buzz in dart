@@ -1,0 +1,14 @@
+main() {
+  
+  for(int i=1;i<=15;i++){
+    if(i %3==0 && i%5==0){
+      print('fizz buzz = $i');      
+    }else if(i %3==0){
+      print('fizz = $i'); 
+    }else if(i%5==0){
+      print('buzz = $i'); 
+    }else{
+      print(i); 
+    }
+  }
+}
