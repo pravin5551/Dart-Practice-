@@ -1,0 +1,11 @@
+main() {
+  String name = "Pravin";
+  print(name);
+  
+  var num = 52.65;
+  print(num);
+  
+  var age = 23;
+  double height = 1.84;
+  print("$height | $age | $num . I'm ${age + 1} year old  "+ " And My name is " + name );
+}
