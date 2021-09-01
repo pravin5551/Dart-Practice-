@@ -42,6 +42,16 @@ $10
   //to replace a string
   print(lovePizza.replaceAll('love', 'like'));
   
+  
+  
+  double x = 40.1.roundToDouble();
+  print(x);
 
+
+//Increment and Decrement 
+  int x =1;
+  int y = x++;
+  int z = --y;
+  print(" $x | $y  | $z");
 
 }
