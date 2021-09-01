@@ -1,0 +1,11 @@
+main() {
+ double temp = 230;
+  int value = 2 ;
+  String pizza = 'pizza';
+  String pasta = 'pasta';
+  
+  print('The temperature is $temp' + 'C');
+  print("$value plus $value + ${value + value}" );
+  print("I like " + pizza +" " + pasta);
+
+}
