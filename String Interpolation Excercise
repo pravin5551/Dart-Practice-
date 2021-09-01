@@ -7,5 +7,13 @@ main() {
   print('The temperature is $temp' + 'C');
   print("$value plus $value + ${value + value}" );
   print("I like " + pizza +" " + pasta);
+  
+  //To write long paragraph
+  
+  print(''' This is the string interpolation example.
+  We can just have a look at it 
+  jhvsdkj 
+  dflksjv 
+  aijsdfpo ''');
 
 }
