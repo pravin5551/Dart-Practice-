@@ -1,0 +1,17 @@
+main() {
+
+int age = 36;
+  String type = age > 18 ? 'adult': 'teenager';
+  print(type); // adult
+  
+    String type = age > 18 ? 'adult': 'teenager';
+  print(type);
+  
+  print('******');
+  
+  int x = 0x0F;
+  int y = 0xF0;
+  print((x ^ y).toRadixString(2) );
+
+
+}
