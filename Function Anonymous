@@ -1,0 +1,13 @@
+void main() {
+  
+  final sayHi = (String name ) => 'Hi, $name';
+  welcome(sayHi, 'Pravin');
+  
+  
+}
+  typedef Great = String Function(String);
+
+void welcome(Great great, String name){
+  print(great(name));
+  print('Welcome to this course');
+}
