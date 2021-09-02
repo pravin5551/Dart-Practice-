@@ -31,6 +31,31 @@ void main() {
 //   age : 23
 //   height : 1.76
 
+
+//Excercise on Map Pizza ordering
+
+const pizzaPrice = {
+    'margherita' : 5.5,
+    'pepperoni' : 7.5,
+    'cvegetarian' : 6.5,
+  };
+  
+  const order = ['margherita', 'pepperoni'];
+  
+  var orderTotal = 0.0;  
+  for(var pizza in order){
+    final price = pizzaPrice[pizza];
+    if(price != null){
+       orderTotal += price;
+    }else{
+      print('$pizza pizza is not on the menu');
+      
+    }
+    
+  }
+  
+  print("Total : \$$orderTotal");
+
  
 }
 }
