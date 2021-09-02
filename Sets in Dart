@@ -1,0 +1,21 @@
+void main() {
+
+  
+  //Sets in Dart
+  var countries = {'Italy', 'UK', 'India', 'Germany', 'Iceland'};
+  
+  countries.add('Italy');
+  countries.add('Japan');
+  countries.remove('UK');
+  print(countries);
+  
+  //Unio
+  var enCountries = {'Italy', 'UK', 'Russia'};
+  var asianCountries = {'India',  'China', 'Russia'};
+  print(enCountries.union(asianCountries));
+    print(enCountries.intersection(asianCountries));
+
+    print(enCountries.difference(asianCountries));
+
+
+}
