@@ -32,5 +32,13 @@ void main() {
   
   ////////////////////////////////////////////
   
+   List<dynamic> numList = [1 , 3 , 5 , "Hey"];
+  print(numList);
   
+  final arr = ['Mumbai', 'Pune', "Banglore", 'Hydrabad', 'Noida'];
+  
+  arr.add('Nashik');
+  arr.insert(4, 'AUrangabaad');
+  
+  print(arr);
 }
