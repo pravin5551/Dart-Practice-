@@ -1,0 +1,17 @@
+
+void main() {
+  List<double> arr = [2.5, 3.5, 7.5];
+
+  print(calculateSum(arr));
+}
+
+double calculateSum(List<double> arr){
+
+  
+  var sum =0.0;
+  for(var i in arr){
+    sum += i;
+  }
+  
+  return sum;
+}
