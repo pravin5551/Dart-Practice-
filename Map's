@@ -1,5 +1,6 @@
 //Map 
 void main() {
+void main() {
 
   Map<String, dynamic> personDetails = {
     'name' : 'Pravin',
@@ -7,9 +8,29 @@ void main() {
     'height' : 1.76,
     
   };
-
   
-  //To access map values
-  var name = personDetails['name'];
-  print(name);
+  //to iterate through map keys
+  
+  for(var item in personDetails.keys){
+    print(item);
+    print(personDetails[item]);
+  }
+/*Output :
+  name
+  Pravin
+  age
+  23
+  height
+  1.76 */
+
+   for(var item in personDetails.entries){
+    print('${item.key} : ${item.value}');   
+  }
+//Output
+//   name : Pravin
+//   age : 23
+//   height : 1.76
+
+ 
+}
 }
