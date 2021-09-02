@@ -1,0 +1,17 @@
+void main() {
+  final details =describe(name : 'Pravin');
+  print(details);
+  
+  foo(1);
+  
+  
+}
+
+void foo(int num1, [int? num2 ]){
+  print('$num1 & $num2');
+  
+}
+
+String describe({ String? name, int? age}){
+  return "My name is $name and I'm $age year old";
+}
