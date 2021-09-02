@@ -1,0 +1,15 @@
+//Map 
+void main() {
+
+  Map<String, dynamic> personDetails = {
+    'name' : 'Pravin',
+    'age' : 23,
+    'height' : 1.76,
+    
+  };
+
+  
+  //To access map values
+  var name = personDetails['name'];
+  print(name);
+}
