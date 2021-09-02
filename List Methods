@@ -1,0 +1,36 @@
+// Copyright 2015 the Dart project authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license
+// that can be found in the LICENSE file.
+
+void main() {
+  var numList = [1, 3, 5, 7, 9];
+  
+  
+//   var sum = 0 ;
+  
+//   for(var num in numList){
+//     sum += num;
+//   }
+  
+  
+   for(int i=0;i<numList.length ; i++){
+//     sum += numList[i];
+      print(numList.last);
+  }
+  
+  numList.add(11);
+  numList.insert(6, 13);
+    numList.insert(5, 15);
+  print(numList);
+  numList.removeAt(3);
+//   print(numList.clear);
+  print(numList.indexOf(3));
+  print(numList.contains(3));
+  
+//   print(sum);
+  
+  
+  ////////////////////////////////////////////
+  
+  
+}
