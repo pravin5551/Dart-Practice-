@@ -1,0 +1,24 @@
+void main() {
+
+  const multiplier = 10;
+  const list = [1,2,3];
+  final result = list.map((x)  {
+    return x * multiplier;
+  });
+  print(result);
+  
+  //Output
+  //(10, 20, 30)
+
+  list.forEach((x) => print(x));
+  //Output
+  //1
+  //2
+  //3
+ list.forEach(print);
+ //Output
+ //1
+ //2
+ //3
+}
+  
