@@ -1,0 +1,39 @@
+void main() {
+
+
+  const list = [1,2,3,4,5,6,7,8,9,10];
+  final even = list.where((value) => value%2 ==0);
+  print(even); // (2, 4, 6, 8, 10)
+  
+  
+  
+  final value = list.firstWhere((value) => value==5, orElse:()=>-1);
+  print(value);// O/P = 5
+  
+    
+  
+  final value2 = list.firstWhere((value) => value==11, orElse:()=>-1);
+    print(value2); // O/P = -1
+
+  /*********************/
+  
+   /**
+    * Excercise
+    **/
+  final odd = where<int>(list, (value) => value%2==1);
+  print(odd);
+  
+  
+}
+
+List<T> where<T>(List<T> items, bool Function(T) f){
+  var results =<T>[];
+  for(var item in items){
+    if(f(item)){
+      results.add(item);
+    }
+  }
+  
+  return  results ;
+}
+  
