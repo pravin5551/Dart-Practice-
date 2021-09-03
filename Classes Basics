@@ -1,0 +1,34 @@
+void main() {
+  
+  
+  //create instance of that classs to access its values
+  final bankAccount = BankAccount();
+  print(bankAccount.balance);
+  
+  //depotite / addition
+  bankAccount.deposit(100);
+  print(bankAccount.balance);
+  
+  
+  //withdraw / removing
+  bankAccount.withdraw(50);
+  print(bankAccount.balance);
+}
+  
+
+class BankAccount{
+  double balance =0;
+  
+  void deposit(double amount){
+    balance += amount;
+  }
+  
+  void withdraw(double amount){
+    
+    if(balance > amount){
+      balance -= amount;
+    }
+   
+  }
+  
+}
