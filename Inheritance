@@ -1,0 +1,29 @@
+
+
+class Animal{
+  void sleep() {
+    print('sleep');
+  }
+}
+
+void main(){
+  final animal = Animal();
+  animal.sleep();
+  var dog = Dog();
+  dog.bark();
+  dog.sleep();
+
+  final cow = Cow();
+  cow.sleep();
+  cow.bark();
+  cow.boo();
+}
+
+class Dog extends Animal{
+  void bark() => print('bark');
+}
+
+class Cow extends Dog{
+  void boo() => print('Boo');
+}
+
