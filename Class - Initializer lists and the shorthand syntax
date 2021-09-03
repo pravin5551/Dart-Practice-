@@ -1,0 +1,39 @@
+void main() {
+  
+  
+  //create instance of that classs to access its values
+  final bankAccount = BankAccount(accountHolder : 'Pravin',
+                                 balanace : 100);
+  print(bankAccount.balanace);
+ 
+}
+  
+
+class BankAccount{
+  
+  String accountHolder;
+  double balanace;
+  
+  BankAccount({
+    required this.accountHolder,
+    this.balanace=0,
+  }) ;
+  
+  
+
+  
+  
+  
+  void deposit(double amount){
+    balanace += amount;
+  }
+  
+  void withdraw(double amount){
+    
+    if(balanace > amount){
+      balanace -= amount;
+    }
+   
+  }
+  
+}
