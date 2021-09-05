@@ -1,0 +1,14 @@
+
+
+Future<String> fetchOrder() => Future.delayed(
+  Duration(seconds: 2),
+    () => 'Cappuccino',
+);
+
+void main(){
+  print('Program started');
+  fetchOrder()
+  .then((value) => print('Your order is : $value'))
+  .whenComplete(() => print('Program completed'))
+  .catchError((error) => print(error));
+}
