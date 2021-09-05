@@ -1,0 +1,34 @@
+
+
+class Animal with Breathing{
+
+}
+
+class Fish extends Animal with Swimming{
+
+}
+
+class Human extends Animal with Swimming{
+
+}
+
+mixin Swimming{
+  void swim(String name) => print('swimming : $name');
+}
+
+mixin Breathing{
+  void breaths() => print('breathing');
+
+}
+
+void main(){
+  final fish = Fish();
+  fish.breaths();
+  fish.swim('fish');
+
+  final human = Human();
+  human.swim('human');
+  human.breaths();
+
+  // final breathing = Breathing();  //We can't make obj of any mixin class
+}
